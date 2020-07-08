@@ -1,5 +1,5 @@
 {
-    "name": "Bookkeeper Bot App",
+    "name": "bookkeeper-bot-app",
     "private": true,
     "version": "0.0.1",
     "dependencies": {
