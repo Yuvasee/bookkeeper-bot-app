@@ -1,11 +1,16 @@
 import React from 'react';
-import TelegramLoginButton from './components/TelegramLoginButton';
+import TelegramLoginButton, { TelegramUser } from '@v9v/ts-react-telegram-login';
 
-const handleTelegramResponse = (user: any) => {
+const handleTelegramResponse = (user: TelegramUser) => {
     console.log(user);
+    // auth_date: 1594214025
+    // first_name: "Yuri"
+    // hash: "e785537c13e00cbb2071b409c14bedf2ea55d05e984465fca0bdc593ef86a29d"
+    // id: 625010646
+    // last_name: "v9v"
 };
 
-function App() {
+function Shell() {
     return (
         <div
             style={{
@@ -24,4 +29,4 @@ function App() {
     );
 }
 
-export default App;
+export default Shell;
