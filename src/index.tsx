@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Shell from './components/Shell';
+import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+
+import Shell from './components/Shell';
+import store from './reducers';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Shell />
+        <Provider store={store}>
+            <Shell />
+        </Provider>
     </React.StrictMode>,
     document.getElementById('root')
 );
