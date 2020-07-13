@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
 
 import TelegramLoginButton, { TelegramUser } from '@v9v/ts-react-telegram-login';
 
@@ -13,6 +14,8 @@ const Container = styled.div`
 `;
 
 function Shell() {
+    const dispatch = useDispatch();
+
     const handleTelegramResponse = useCallback((user: TelegramUser) => {
         console.log(user);
         // auth_date: 1594214025
